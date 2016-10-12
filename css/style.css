@@ -1,0 +1,287 @@
+
+
+body{
+	font-size: 1.4em;
+	font-weight: 300;
+	line-height: 1.6;
+	font-family: 'Roboto', sans-serif;
+	color: #110B06;
+}
+
+
+.parallax-window {
+    min-height: 100px;
+    
+	height:100vh; 
+	
+}
+
+.logo2{
+	max-width: 80%; 
+	height: auto; 
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+.nopadding{padding:0;}
+
+.nomargin{margin:0;}
+
+.row1{
+	margin:0;
+	padding: 100px 150px 100px 150px; /*top right bottom left*/
+}
+
+.row2{
+	margin:0;
+	background: #ffc057;
+	padding: 100px 0 100px 0; /*top right bottom left*/
+}
+
+.row2 h4{
+	
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 300;
+	letter-spacing: 0.2em;
+	line-height: 1.45;
+	font-family: 'Roboto', sans-serif;
+	color: #110B06;
+	text-transform: uppercase;
+}
+.row2 p{
+	padding-top: 50px;
+	text-align: center;
+		font-size: 1.2em;
+line-height: 1.8;
+	font-weight: 300;
+	letter-spacing: 0.1em;
+	font-family: 'Roboto', sans-serif;
+	color: #110B06;
+	
+}
+
+
+.row3{
+	margin:0;
+	padding: 100px 50px 100px 50px;
+}
+.row3 h4{
+	
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 300;
+	letter-spacing: 0.2em;
+	line-height: 1.45;
+	font-family: 'Roboto', sans-serif;
+	color: #110B06;
+	text-transform: uppercase;
+	padding-bottom: 70px;
+}
+.row3 p{
+	font-weight: 300;
+	padding-top: 30px;
+	font-size: 1.2em;
+line-height: 1.45;
+	font-family: 'Roboto', sans-serif;
+	color: #110B06;
+	
+}
+
+.buttonbilder{
+	
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	line-height: 1.45;
+	font-family: 'Roboto', sans-serif;
+	color: #110B06;
+	text-transform: uppercase;
+	padding-top: 50px;
+	padding-bottom: 0;
+	
+}
+
+.row4{
+	margin:0;
+	padding: 100px 50px 100px 50px;
+	background: #ffc057;
+	height: 500px;
+}
+
+.row5{
+	margin:0;
+	padding: 100px 50px 100px 50px;
+	
+}
+
+.row5 h4{
+	
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 300;
+	letter-spacing: 0.2em;
+	line-height: 1.45;
+	font-family: 'Roboto', sans-serif;
+	color: #110B06;
+	text-transform: uppercase;
+	padding-bottom: 30px;
+}
+
+.row5 h5{
+	
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	line-height: 1.45;
+	font-family: 'Roboto', sans-serif;
+	color: #110B06;
+	text-transform: uppercase;
+	padding-bottom: 70px;
+}
+
+.row5 p{
+	
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	line-height: 1.45;
+	font-family: 'Roboto', sans-serif;
+	color: #110B06;
+	text-transform: uppercase;
+	padding-bottom: 70px;
+	
+}
+
+.row6{
+	margin:0;
+	padding: 0px 50px 0px 50px;
+	background: #ffc057;
+	height: 10px;
+}
+
+.row7{
+	margin:0;
+	background: #fff;
+	padding: 100px 0 100px 0; /*top right bottom left*/
+}
+
+.row7 h4{
+	
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 300;
+	letter-spacing: 0.2em;
+	line-height: 1.45;
+	font-family: 'Roboto', sans-serif;
+	color: #110B06;
+	text-transform: uppercase;
+}
+.row7 p{
+	padding-top: 50px;
+	text-align: center;
+		font-size: 1.2em;
+line-height: 1.8;
+	font-weight: 300;
+	letter-spacing: 0.1em;
+	font-family: 'Roboto', sans-serif;
+	color: #110B06;
+	
+}
+
+.pic{
+	background-position: center center;
+background-size: cover;
+	background: #000;
+	-webkit-opacity: 0.5;
+	opacity: .8; 
+	filter:Alpha(Opacity=50);
+	 -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	 -moz-opacity: 0.5;
+	 -khtml-opacity: 0.5;
+}
+.icons{
+	color: #ffc057;
+}
+
+.icon2{
+	
+	top: 2px;
+}
+
+.button{
+	border-color: #110B06;
+}
+
+.btn-default:hover
+{
+  background-color: #ffc057;
+}
+
+
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 1000px;
+  height: 700px;
+  
+  text-align: center;
+  line-height: 300px;
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #ffc057;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 30px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+
+
+
