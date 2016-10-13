@@ -36,11 +36,10 @@ body{
 .row2{
 	margin:0;
 	background: #ffc057;
-	padding: 100px 20px 100px 20px; /*top right bottom left*/
+	padding: 100px 0px 100px 0px; /*top right bottom left*/
 }
 
 .row2 h4{
-	
 	text-align: center;
 	font-size: 1.5em;
 	font-weight: 300;
@@ -50,16 +49,16 @@ body{
 	color: #110B06;
 	text-transform: uppercase;
 }
+
 .row2 p{
 	padding-top: 50px;
 	text-align: center;
-		font-size: 1.2em;
-line-height: 1.8;
+	font-size: 1.2em;
+	line-height: 1.8;
 	font-weight: 300;
 	letter-spacing: 0.1em;
 	font-family: 'Roboto', sans-serif;
-	color: #110B06;
-	
+	color: #110B06;	
 }
 
 
@@ -68,7 +67,6 @@ line-height: 1.8;
 	padding: 100px 50px 100px 50px;
 }
 .row3 h4{
-	
 	text-align: center;
 	font-size: 1.5em;
 	font-weight: 300;
@@ -79,20 +77,20 @@ line-height: 1.8;
 	text-transform: uppercase;
 	padding-bottom: 70px;
 }
+
 .row3 p{
 	font-weight: 300;
 	padding-top: 30px;
 	font-size: 1.2em;
-line-height: 1.45;
+	line-height: 1.45;
 	font-family: 'Roboto', sans-serif;
 	color: #110B06;
 	
 }
 
 .buttonbilder{
-	
 	text-align: center;
-	font-size: 1.2em;
+	
 	font-weight: 400;
 	letter-spacing: 0.1em;
 	line-height: 1.45;
@@ -118,7 +116,6 @@ line-height: 1.45;
 }
 
 .row5 h4{
-	
 	text-align: center;
 	font-size: 1.5em;
 	font-weight: 300;
@@ -131,7 +128,6 @@ line-height: 1.45;
 }
 
 .row5 h5{
-	
 	text-align: center;
 	font-size: 1.2em;
 	font-weight: 400;
@@ -144,7 +140,6 @@ line-height: 1.45;
 }
 
 .row5 p{
-	
 	text-align: center;
 	font-size: 1.2em;
 	font-weight: 400;
@@ -167,11 +162,10 @@ line-height: 1.45;
 .row7{
 	margin:0;
 	background: #fff;
-	padding: 100px 20px 100px 20px; /*top right bottom left*/
+	padding: 100px 0px 100px 0px; /*top right bottom left*/
 }
 
 .row7 h4{
-	
 	text-align: center;
 	font-size: 1.5em;
 	font-weight: 300;
@@ -184,8 +178,8 @@ line-height: 1.45;
 .row7 p{
 	padding-top: 50px;
 	text-align: center;
-		font-size: 1.2em;
-line-height: 1.8;
+	font-size: 1.2em;
+	line-height: 1.8;
 	font-weight: 300;
 	letter-spacing: 0.1em;
 	font-family: 'Roboto', sans-serif;
@@ -194,8 +188,8 @@ line-height: 1.8;
 }
 
 .pic{
-	background-position: center center;
-background-size: cover;
+	background-position: center;
+	background-size: cover;
 	background: #000;
 	-webkit-opacity: 0.5;
 	opacity: .8; 
@@ -221,6 +215,7 @@ background-size: cover;
 
 .button{
 	border-color: #110B06;
+	font-size: 1.3em;
 }
 
 .btn-default:hover
@@ -294,6 +289,8 @@ a.control_next {
 @media(max-width:767px) {
     .row2 p {
         font-size: 1.1em;
+		padding-left: 40px;
+		padding-right: 40px;
     }
 }
 
@@ -307,5 +304,25 @@ a.control_next {
 @media(max-width:767px) {
     .row7 p {
         font-size: 1.1em;
+		padding-left: 40px;
+		padding-right: 40px;
     }
+}
+
+@media(max-width:767px) {
+    .button {
+       font-size: 1.1em;
+    }
+}
+
+@media(max-width:767px) {
+    .parallax-window {
+		height:40vh; 
+	}
+}
+
+@media(max-width:767px) {
+    .logo2 {
+		max-width: 50%; 
+	}
 }
