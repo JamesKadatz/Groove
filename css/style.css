@@ -22,6 +22,13 @@ body{
 	display: block; 
 	margin-left: auto; 
 	margin-right: auto;
+	padding-top: 20%;
+	-webkit-opacity: 0.5;
+	opacity: .9; 
+	filter:Alpha(Opacity=50);
+	 -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	 -moz-opacity: 0.5;
+	 -khtml-opacity: 0.5;
 }
 
 .nopadding{padding:0;}
@@ -324,5 +331,99 @@ a.control_next {
 @media(max-width:767px) {
     .logo2 {
 		max-width: 50%; 
+	}
+}
+
+.navbar-inverse{
+  background:#b5aaa5 !important;
+  border-bottom:4px solid #ffc057 !important;
+}
+
+.navbar-brand{
+  font:1em Roboto !important;
+  text-transform:uppercase;
+  color:#FFF !important;
+  letter-spacing:2px;
+  margin-top:2px;
+}
+
+.nav{
+margin-bottom:0px;}
+
+.nav a{
+    font:500 0.9em Roboto;
+    letter-spacing:2px;
+    padding:16px !important;
+    color:#fff !important;
+    text-transform:uppercase;
+    position:relative;
+    z-index:1000;
+  }
+  a:hover{
+    color:#FFF !important;
+  }
+   .active > a{
+    background:#a3958f !important;
+  }
+  li{
+    position:relative;
+  }
+}
+
+.navbar-inverse .navbar-toggle{
+  border:none;
+}
+
+.navbar-collapse{
+  box-shadow:none !important;
+  border:none !important;
+}
+
+.navbar-inverse .navbar-toggle:hover{
+  background:transparent !important;
+}
+
+.navbar-inverse .navbar-toggle:focus{
+  background:transparent !important;
+}
+
+.navbar-inverse .navbar-toggle:active{
+  background:transparent !important;
+}
+
+.icon-bar{
+  background:#a3bfc6 !important;
+}
+
+.hover{
+  display:block;
+  position:absolute;
+  width:0%;
+  height:100%;
+  top:0px;
+  left:0px;
+  background:#ffc057 !important;
+  z-index:0;
+  opacity:0;
+}
+
+@media (max-width: 767px) {
+.nav{
+  padding-bottom:20px;
+  a{
+    padding:12px !important;
+  }
+}
+}
+
+@media (max-width: 480px) {
+  .nav{
+    padding-bottom:20px;
+  }
+}
+
+@media(max-width:767px) {
+    .navbar-brand {
+		font-size: 0.8em !important; 
 	}
 }

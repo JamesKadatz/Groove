@@ -6,11 +6,36 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet"> 
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
     <title>Groove</title>
   </head>
-  <body>
-	
-	
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+	     
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Groove - Handmade Soundsystems</a>
+    </div>
+
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#groove">Über Groove</a><span class="hover"></span></li>
+      <li><a href="#ideen">Ideen & Modelle</a><span class="hover"></span></li>
+      <li><a href="#details">Details</a><span class="hover"></span></li>
+      <li><a href="#andere">Andere Projekte</a><span class="hover"></span></li>
+      <li><a href="#kontakt">Kontakt</a><span class="hover"></span></li>
+    </ul>
+  </div>
+  </div>
+</nav>
+
 	<div class="parallax-window" data-parallax="scroll" data-image-src="img/header.jpg">
 		<div class="row nomargin">
 			<div class="col-lg-3 nopadding">
@@ -42,14 +67,14 @@
 		</div>
 	</div>
 
-	<div class="row row2">
+	<div class="row row2" id="groove">
 		<div class="col-lg-12"><h4>groove - handmade soundsystems</h4></div>
 		<div class="col-lg-2"></div>
 		<div class="col-lg-8"><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p></div>
 		<div class="col-lg-2"></div>
 	</div>
 	
-	<div class="row row3">
+	<div class="row row3" id="ideen">
 		<div class="col-lg-12"><h4>ideen & modelle</h4></div>
 	
 		<div class="col-sm-4"><img src="img/duerkopp_klein.jpg" class="img-responsive"/>
@@ -78,14 +103,14 @@
 
 		</div>
 	</div>
-	<div class="row row2">
+	<div class="row row2" id="details">
 		<div class="col-lg-12"><h4>technische details</h4></div>
 		<div class="col-lg-2"></div>
 		<div class="col-lg-8"><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p></div>
 		<div class="col-lg-2"></div>
 	</div>
 	
-		<div class="row row7">
+		<div class="row row7" id="andere">
 		<div class="col-lg-12"><h4>Weitere Produkte</h4></div>
 		<div class="col-lg-2"></div>
 		<div class="col-lg-8"><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p></div>
@@ -97,7 +122,7 @@
 		<div class="col-lg-12 nomargin nopadding pic"><img src="img/pic1.jpg" class="img-responsive"></div>
 	</div>
 	
-	<div class="row row5">
+	<div class="row row5" id="kontakt">
 		<div class="col-lg-12"><h4>Interesse? Ideen? Fragen?</h4></div>
 		<div class="col-lg-12"><h5>Kontaktieren Sie mich:</h5></div>
 		<div class="col-lg-12"><p><button type="button" class="btn btn-default btn-lg button">
@@ -113,7 +138,7 @@
 	<script src="js/parallax.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script>$('.parallax-window').parallax({imageSrc: 'img/header.jpg'});</script>
-	
+	<script>$('body').scrollspy({target: ".navbar"}) </script>
 	<script>
 	jQuery(document).ready(function ($) {
 
@@ -161,6 +186,57 @@ setInterval(function () {
 });    
 
 	</script>
+	<script>
+	$( "li" ).hover(
+  function() {
+      $(this).find("span").stop().animate({
+      width:"100%",
+      opacity:"1",
+    }, 400, function () {
+    })
+  }, function() {
+      $(this).find("span").stop().animate({
+      width:"0%",
+      opacity:"0",
+    }, 400, function () {
+    })
+  }
+);
+	</script>
+	
+	<script>
+			$(document).ready(function(){
+			  // Add scrollspy to <body>
+			  $('body').scrollspy({target: ".navbar", offset:50});   
+
+			  // Add smooth scrolling on all links inside the navbar
+			  $("#bs-example-navbar-collapse-1 a").on('click', function(event) {
+
+				// Prevent default anchor click behavior
+				event.preventDefault();
+
+				// Store hash
+				var hash = this.hash;
+
+				// Using jQuery's animate() method to add smooth page scroll
+				// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+				$('html, body').animate({
+				  scrollTop: $(hash).offset().top
+				}, 600, function(){
+			   
+				  // Add hash (#) to URL when done scrolling (default click behavior)
+				  window.location.hash = hash;
+				});
+			  });
+			});
+		</script>
+		
+		<script>	$(function(){ 
+     var navMain = $("#bs-example-navbar-collapse-1");
+     navMain.on("click", "a", null, function () {
+         navMain.collapse('hide');
+     });
+ });</script>
   
   </body>
 </html>
