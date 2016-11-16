@@ -52,20 +52,6 @@
 	
 	</div>
 	
-	<div class="row row1 hidden-xs">
-		<div class="col-lg-12">
-			<div id="slider">
-				<a href="javascript://" class="control_next">></a>
-				<a href="javascript://" class="control_prev"><</a>
-				<ul>
-					<li><img src="img/slider/duerkopp1.jpg" class="img-responsive"/></li>
-					<li><img src="img/slider/phoenix1.jpg" class="img-responsive"/></li>
-					<li><img src="img/slider/duerkopp2.jpg" class="img-responsive"/></li>
-					<li><img src="img/slider/phoenix2.jpg" class="img-responsive"/></li>
-				</ul>  
-			</div>
-		</div>
-	</div>
 
 	<div class="row row2" id="groove">
 		<div class="col-lg-12"><h4>groove - handmade soundsystems</h4></div>
@@ -74,10 +60,34 @@
 		<div class="col-lg-2"></div>
 	</div>
 	
+	<div id="slider">
+		<a href="javascript:return false" class="control_next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+		<a href="javascript:return false" class="control_prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+		<ul>
+			<li><img src="img/slider/IMG_5847.jpg" class="img-responsive"></li>
+			<li><img src="img/slider/duerkopp2.jpg" class="img-responsive"></li>
+			<li><img src="img/slider/phoenix1.jpg" class="img-responsive"></li>
+			<li><img src="img/slider/phoenix2.jpg" class="img-responsive"></li>
+		</ul>  
+	</div>
+	
+	
+	<!--<div class="row row-masonry">
+	
+	<div class="masonry">
+	<div class="item"><img src="img/masonry/IMG_6143.jpg" class="img-responsive"></div>
+   <div class="item"><img src="img/masonry/IMG_5847.jpg" class="img-responsive"></div>
+   <div class="item"><img src="img/masonry/IMG_6145.jpg" class="img-responsive"></div>
+   <div class="item"><img src="img/masonry/IMG_6143.jpg" class="img-responsive"></div>
+   <div class="item"><img src="img/masonry/IMG_5847.jpg" class="img-responsive"></div>
+   <div class="item"><img src="img/masonry/IMG_5847.jpg" class="img-responsive"></div>
+
+	</div>
+	-->
 	<div class="row row3" id="ideen">
 		<div class="col-lg-12"><h4>ideen & modelle</h4></div>
 	
-		<div class="col-sm-4"><img src="img/duerkopp_klein.jpg" class="img-responsive"/>
+		<div class="col-sm-4"><img src="img/IMG_6145.jpg" class="img-responsive"/>
 			<p><span class="glyphicon glyphicon-stop icons" aria-hidden="true"></span> 
 			Dürkopp<br><br>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
 			
@@ -87,13 +97,13 @@
 			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
 			</p>
 		</div>
-		<div class="col-sm-4"><img src="img/pyrat_klein.jpg" class="img-responsive"/>
+		<div class="col-sm-4"><img src="img/IMG_6078.jpg" class="img-responsive"/>
 			<p><span class="glyphicon glyphicon-stop icons" aria-hidden="true"></span> Pyrat<br><br>
 			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
 			</p>
 		</div>
 		
-		<div class="col-lg-12"><div class="buttonbilder"><button type="button" class="btn btn-default btn-lg button">Mehr Bilder</button></div></div>
+		<!--<div class="col-lg-12"><div class="buttonbilder"><a class="btn btn-default btn-lg button" href="#">Mehr Bilder</a></div></div>-->
 		
 	</div>
 	
@@ -125,12 +135,10 @@
 	<div class="row row5" id="kontakt">
 		<div class="col-lg-12"><h4>Interesse? Ideen? Fragen?</h4></div>
 		<div class="col-lg-12"><h5>Kontaktieren Sie mich:</h5></div>
-		<div class="col-lg-12"><p><button type="button" class="btn btn-default btn-lg button">
-  <span class="glyphicon glyphicon-envelope icon2" aria-hidden="true"></span> E-Mail
-</button></p></div>
+		<div class="col-lg-12"><p><a class="btn btn-default btn-lg button" href="#">E-Mail</a></p></div>
 	</div>
 	
-		<div class="row row6">
+	<div class="row row6">
 		<div class="col-lg-12"></div>
 	</div>
 	  
@@ -139,41 +147,46 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script>$('.parallax-window').parallax({imageSrc: 'img/header.jpg'});</script>
 	<script>$('body').scrollspy({target: ".navbar"}) </script>
+	
 	<script>
 	jQuery(document).ready(function ($) {
-
-setInterval(function () {
+	setInterval(function () {
     moveRight();
-}, 3000);
-  
-	var slideCount = $('#slider ul li').length;
-	var slideWidth = $('#slider ul li').width();
-	var slideHeight = $('#slider ul li').height();
-	var sliderUlWidth = slideCount * slideWidth;
-	
-	$('#slider').css({ width: slideWidth, height: slideHeight });
-	
-	$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
-	
+}, 9000);
+
+    var slideCount = $('#slider ul li').length;
+    var slideWidth = $(window).width();
+    var slideHeight = $('#slider ul li').height();
+    var sliderUlWidth = slideCount * slideWidth;
+
+    $('#slider').css({width: slideWidth, height: slideHeight});
+
+    $('#slider ul').css({width: sliderUlWidth, marginLeft: -slideWidth});
+    
+    $('#slider ul li').css({width: slideWidth});
+
     $('#slider ul li:last-child').prependTo('#slider ul');
+    
 
     function moveLeft() {
         $('#slider ul').animate({
-            left: + slideWidth
-        }, 500, function () {
+            left: +slideWidth
+        }, 200, function () {
             $('#slider ul li:last-child').prependTo('#slider ul');
             $('#slider ul').css('left', '');
         });
-    };
+    }
+    ;
 
     function moveRight() {
         $('#slider ul').animate({
-            left: - slideWidth
-        }, 500, function () {
+            left: -slideWidth
+        }, 200, function () {
             $('#slider ul li:first-child').appendTo('#slider ul');
             $('#slider ul').css('left', '');
         });
-    };
+    }
+    ;
 
     $('a.control_prev').click(function () {
         moveLeft();
@@ -183,7 +196,7 @@ setInterval(function () {
         moveRight();
     });
 
-});    
+});
 
 	</script>
 	<script>
@@ -203,7 +216,6 @@ setInterval(function () {
   }
 );
 	</script>
-	
 	<script>
 			$(document).ready(function(){
 			  // Add scrollspy to <body>
@@ -230,8 +242,8 @@ setInterval(function () {
 			  });
 			});
 		</script>
-		
-		<script>	$(function(){ 
+	<script>	
+		$(function(){ 
      var navMain = $("#bs-example-navbar-collapse-1");
      navMain.on("click", "a", null, function () {
          navMain.collapse('hide');
