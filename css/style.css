@@ -207,12 +207,12 @@ body{
 	background-position: center;
 	background-size: cover;
 	background: #000;
-	-webkit-opacity: 0.5;
+	/*-webkit-opacity: 0.5;
 	opacity: .8; 
 	filter:Alpha(Opacity=50);
 	 -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
 	 -moz-opacity: 0.5;
-	 -khtml-opacity: 0.5;
+	 -khtml-opacity: 0.5;*/
 }
 
 /* Glyphicons */
@@ -441,6 +441,12 @@ a.control_next {
 .navbar-inverse{
   background:#b5aaa5 !important;
   border-bottom:4px solid #ffc057 !important;
+  -webkit-opacity: 0.5;
+	opacity: .8; 
+	filter:Alpha(Opacity=50);
+	 -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	 -moz-opacity: 0.5;
+	 -khtml-opacity: 0.5;
 }
 
 .navbar-brand{
