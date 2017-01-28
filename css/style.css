@@ -32,7 +32,7 @@ body{
 
 .row-text{
 	margin:0;
-	background: /*#ffc057;*/ #fff;
+	/*background: #ffc057; #fff;*/
 	padding: 130px 0px 130px 0px; /*top right bottom left*/
 }
 
@@ -60,7 +60,7 @@ body{
 
 .row-projects{
 	margin:0;
-	background: #fff;
+	/*background: #fff;*/
 	padding: 130px 0px 130px 0px;
 }
 
@@ -397,3 +397,36 @@ transform:scale(1.1);
 -ms-transform:scale(1.1);
 -o-transform:scale(1.1)
 }
+
+/* These are the important classes */
+.img-hover {
+  width: 320px; /*width & height ratio from images you use*/
+  height: 179px;
+  background-repeat:no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  background-position: 50% 50%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.img-hover:hover {
+  background-size: 110%;
+}
+
+/* used to set the background images */
+.img1 {
+  background-image: url('http://cdn.morguefile.com/imageData/public/files/d/DMedina/06/l/14041601315pps2.jpg');
+}
+
+.img2 {
+  background-image: url('http://cdn.morguefile.com/imageData/public/files/m/Maryhere/06/l/1401682920m3yf7.jpg');
+}
+
+.img3 {
+  background-image: url('http://cdn.morguefile.com/imageData/public/files/s/SuriChutkoi/10/l/14142585899wotz.jpg');
+}
+
+
+
+
