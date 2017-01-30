@@ -31,7 +31,8 @@ body{
 }
 
 .row-text{
-	margin:0;
+	margin-top: 100px;
+	margin-bottom: 100px;
 	/*background: #ffc057; #fff;*/
 	padding: 130px 0px 130px 0px; /*top right bottom left*/
 }
@@ -147,10 +148,11 @@ body{
 
 .thumbnail {
 	margin:0px;
-	padding: 0;
+	padding: 0 2px 0 2px;
 	border: 0px solid #ddd;
 	border-radius: 0px;
 	/*width: 120%;*/
+	background: transparent;
 }
 
 /* Button */
